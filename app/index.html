@@ -40,10 +40,10 @@
                         Brighness&nbsp;-/+
                     </div>
                     <div class="col-xs-8">
-                        <input type="range" step="1" min="-255" max="255">
+                        <input type="range" ng-model="brightness" step="1" min="-255" max="255">
                     </div>
                     <div class="col-xs-1">
-                        <input type="text" size="4">
+                        <input type="text" size="4" ng-model="brightness">
                     </div>
                 </div>
 
@@ -52,10 +52,10 @@
                         Contrast&nbsp;-/+
                     </div>
                     <div class="col-xs-8">
-                        <input type="range" step="0.1" min="0" max="10">
+                        <input type="range" ng-model="contrast" step="0.1" min="0" max="10">
                     </div>
                     <div class="col-xs-1">
-                        <input type="text" size="4">
+                        <input type="text" size="4" ng-model="contrast">
                     </div>
                 </div>
                 <div class="row">
@@ -63,7 +63,7 @@
                         Autocontrast on/off
                     </div>
                     <div class="col-xs-8">
-                        <input type="checkbox">
+                        <input type="checkbox" ng-model="autocontrast">
                     </div>
                 </div>
 
@@ -74,10 +74,10 @@
                         R
                     </div>
                     <div class="col-xs-10">
-                        <input type="range" min="0" max="255">
+                        <input type="range" ng-model="color.red" min="0" max="255">
                     </div>
                     <div class="col-xs-1">
-                        <input type="text" size="4">
+                        <input type="text" size="4" ng-model="color.red">
                     </div>
                 </div>
 
@@ -86,10 +86,10 @@
                         G
                     </div>
                     <div class="col-xs-10">
-                        <input type="range" step="1" min="0" max="255">
+                        <input type="range" g-model="color.green" step="1" min="0" max="255">
                     </div>
                     <div class="col-xs-1">
-                        <input type="text" size="4">
+                        <input type="text" size="4" ng-model="color.green">
                     </div>
                 </div>
 
@@ -98,10 +98,10 @@
                         B
                     </div>
                     <div class="col-xs-10">
-                        <input type="range" step="1" min="0" max="255">
+                        <input type="range" ng-model="color.blue" step="1" min="0" max="255">
                     </div>
                     <div class="col-xs-1">
-                        <input type="text" size="4">
+                        <input type="text" size="4" ng-model="color.blue">
                     </div>
                 </div>
 
@@ -114,16 +114,16 @@
                         <input type="range" step="1" min="1" max="100">
                     </div>
                     <div class="col-xs-1">
-                        <input type="text" size="4">
+                        <input type="text" size="4" ng-model="strength">
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-xs-3">
+                    <div class="col-xs-4">
                         Vignette on/off
                     </div>
-                    <div class="col-xs-9">
-                        <input type="checkbox">
+                    <div class="col-xs-8">
+                        <input type="checkbox" ng-model="vignette">
                     </div>
                 </div>
 
