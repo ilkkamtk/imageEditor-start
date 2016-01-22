@@ -147,5 +147,5 @@ angular.module('imageEditorApp')
     .config(function ($compileProvider) {
 
         $compileProvider.aHrefSanitizationWhitelist(/^\s*(https?|ftp|mailto|coui|data):/);
-        // whitelists non-http: protocols. specifically we need coui for coherent.
+        // whitelists non-http: protocols. specifically we need data
     });
