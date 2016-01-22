@@ -40,10 +40,10 @@
                         Brighness&nbsp;-/+
                     </div>
                     <div class="col-xs-8">
-                        <input type="range" ng-model="brightness" step="1" min="-255" max="255">
+                        <input type="range" ng-model="brightness" ng-change="applyFilters()" step="1" min="-255" max="255">
                     </div>
                     <div class="col-xs-1">
-                        <input type="text" size="4" ng-model="brightness">
+                        <input type="text" size="4" ng-model="brightness" ng-change="applyFilters()">
                     </div>
                 </div>
 
@@ -52,10 +52,10 @@
                         Contrast&nbsp;-/+
                     </div>
                     <div class="col-xs-8">
-                        <input type="range" ng-model="contrast" step="0.1" min="0" max="10">
+                        <input type="range" ng-model="contrast" ng-change="applyFilters()" step="0.1" min="0" max="10">
                     </div>
                     <div class="col-xs-1">
-                        <input type="text" size="4" ng-model="contrast">
+                        <input type="text" size="4" ng-model="contrast" ng-change="applyFilters()">
                     </div>
                 </div>
                 <div class="row">
